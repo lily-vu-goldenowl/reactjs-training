@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 import deletePost from '../actions/postAction'
 
 class Post extends Component {
@@ -10,13 +11,18 @@ class Post extends Component {
 
   render() {
     const post = this.props.post ? (
-      <div className="post">
-        <h4 className="center">{this.props.post.title}</h4>
-        <p>{this.props.post.body}</p>
-        <div className="center">
-          <button className="btn grey" onClick={this.handleClick}>
-            Delete Post
-          </button>
+      <div className="post card">
+        <div className="card-content">
+          <h4 className="center">{this.props.post.title}</h4>
+          <p>{this.props.post.body}</p>
+          <br />
+          <div className="center button">
+            <Link to={'/' + this.props.post.id + '/edit_post'}>Edit Post</Link>
+          </div>
+          <br />
+          <div className="center">
+            <button onClick={this.handleClick}>Delete Post</button>
+          </div>
         </div>
       </div>
     ) : (

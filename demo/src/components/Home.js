@@ -5,17 +5,16 @@ import { connect } from 'react-redux'
 
 class Home extends Component {
   render() {
-    console.log(this.props.posts.find(post => post.id === 1))
     const posts = this.props.posts;
     const postList = posts ? (
       posts.map(post => {
         return(
           <div className="post card" key={post.id}>
-            <img src={logo} alt="A Smile" />
             <div className="card-content">
               <Link to={'/' + post.id}>
-                <span className="card-title">{post.title}</span>
+                <span className="card-title center">{post.title}</span>
               </Link>
+              <img src={logo} alt="A Smile" />
               <p>{post.body}</p>
             </div>
           </div>

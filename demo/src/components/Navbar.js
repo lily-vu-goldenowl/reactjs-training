@@ -2,17 +2,14 @@ import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
 const Navbar = (props) => {
-  console.log(props)
-
   return(
-    <nav className="nav-wrapper blue darken-3">
-      <div className="container">
-        <a className="brand-logo left" href="/">Poke'Times</a>
-        <ul className="right">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
+    <nav className="navbar">
+      <a href="/">Lily's Blog</a>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/new_post">New Post</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </nav>
   )
