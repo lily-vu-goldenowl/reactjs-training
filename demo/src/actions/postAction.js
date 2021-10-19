@@ -1,8 +1,8 @@
 const deletePost = (id) => {
   return {
-    type: 'DELETE_POST',
-    id
-  }
-}
+    type: "DELETE_POST",
+    id,
+  };
+};
 
-export default deletePost
+export default deletePost;

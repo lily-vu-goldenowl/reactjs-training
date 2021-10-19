@@ -1,10 +1,10 @@
 const editPost = (id, title, body) => {
   return {
-    type: 'EDIT_POST',
+    type: "EDIT_POST",
     id,
     title,
-    body
-  }
-}
+    body,
+  };
+};
 
 export default editPost;

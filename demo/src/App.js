@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import Navbar from './components/Navbar';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Post from './components/Post';
-import NewPost from './components/NewPost';
-import EditPost from './components/EditPost';
+import React, { Component } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Home from "./components/home";
+import NewPost from "./components/post/new_post";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Post from "./components/post/post";
+import EditPost from "./components/post/edit_post";
 
 class App extends Component {
   render() {
@@ -15,12 +15,12 @@ class App extends Component {
         <div>
           <Navbar />
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/new_post' component={NewPost} />
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route exact path='/:post_id' component={Post} />
-            <Route path='/:post_id/edit_post' component={EditPost} />
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/new_post" component={NewPost} />
+            <Route exact path="/:post_id" component={Post} />
+            <Route path="/:post_id/edit_post" component={EditPost} />
           </Switch>
         </div>
       </BrowserRouter>

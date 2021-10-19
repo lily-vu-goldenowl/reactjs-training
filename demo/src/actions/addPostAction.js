@@ -1,9 +1,9 @@
 const addPost = (title, body) => {
   return {
-    type: 'ADD_POST',
+    type: "ADD_POST",
     title,
-    body
-  }
-}
+    body,
+  };
+};
 
 export default addPost;
