@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
 * {
@@ -33,16 +33,15 @@
   padding: 20px;
 }
 
-.home .post .card-content img{
+.home .post .card-content img {
   display: block;
   margin: 0 auto;
 }
 
-.home .post{
+.home .post {
   overflow: hidden;
   padding-left: 80px;
 }
-
 
 /* post blog */
 .post .button a {
@@ -78,12 +77,14 @@
   color: #f59794;
   margin-bottom: 30px;
 }
-.create input, .create textarea, .create select {
+.create input,
+.create textarea,
+.create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
 }
-.create input[type=text].focus-only:focus {
+.create input[type="text"].focus-only:focus {
   box-shadow: 0 1px 0 0 #f59794;
   border-bottom: 1px solid #f59794;
 }
@@ -117,12 +118,14 @@
   color: #f59794;
   margin-bottom: 30px;
 }
-.edit input, .create textarea, .create select {
+.edit input,
+.create textarea,
+.create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
 }
-.edit input[type=text].focus-only:focus {
+.edit input[type="text"].focus-only:focus {
   box-shadow: 0 1px 0 0 #f59794;
   border-bottom: 1px solid #f59794;
 }
